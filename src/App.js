@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import Mensaje from './Message'
 
-function App() {
+const Description = () =>{
+  return <h1>
+    Esta es la app del bootcamp full stack de midudev
+    </h1>
+}
+
+const App= () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Mensaje color ='red' message = 'Hola, Devs'/>
+      <Mensaje color = 'green' message = 'Estamos trabajando en un curso de React'/>
+      <Description />
     </div>
   );
 }
